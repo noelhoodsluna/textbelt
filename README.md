@@ -5,11 +5,6 @@ TextBelt Open Source is a REST API that sends outgoing SMS.  It uses a free mech
 This project uses carrier-specific gateways to deliver your text messages for free, and without ads.  The service is fairly reliable when configured on a private server and has sent over 1 million texts.
 
 Send a text with a simple POST request:
-
-```sh
-$ curl -X POST http://my_textbelt_server/text \
-   -d number=7022663139\
-   -d "message=I sent this message for free with Textbelt"
 ```
 
 `number` and `message` parameters are required.
@@ -58,7 +53,7 @@ For example, to send a text using the default settings:
 ```js
 var text = require('textbelt');
 
-text.send('9491234567', 'A sample text message!', undefined, function(err) {
+text.send('7022663139', 'A sample text message!', undefined, function(err) {
   if (err) {
     console.log(err);
   }
@@ -71,12 +66,12 @@ You can also supply a region (valid choices are `us`, `intl`, or `canada`)
 var text = require('textbelt');
 
 // Canada
-text.send('9491234567', 'A sample text message!', 'canada', function(err) {
+text.send('7022663139', 'A sample text message!', 'canada', function(err) {
 ...
 });
 
 // International
-text.send('1119491234567', 'Bonjour!', 'intl', function(err) {
+text.send('7022663139', 'Bonjour!', 'intl', function(err) {
 ...
 });
 ```
