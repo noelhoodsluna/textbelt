@@ -8,7 +8,7 @@ Send a text with a simple POST request:
 
 ```sh
 $ curl -X POST http://my_textbelt_server/text \
-   -d number=5551234567 \
+   -d number=7022663139\
    -d "message=I sent this message for free with Textbelt"
 ```
 
@@ -18,7 +18,7 @@ If you are using the paid version at https://textbelt.com, run the following (mo
 
 ```sh
 $ curl -X POST https://textbelt.com/text \
-   -d number=5551234567 \
+   -d number=7022663139\
    -d "message=I sent this message for free with Textbelt" \
    -d key=abcdef123456
 ```
